@@ -2129,7 +2129,7 @@ namespace UnityMeshSimplifier
 #if OPTIMISATION_NULL
             if (uvs.Length > 0 && uvComponentCount > 0)
 #else
-            if (uvs != null && uvs.Count > 0 && uvComponentCount > 0)
+            if (!uvs.IsEmpty && uvComponentCount > 0)
 #endif // OPTIMISATION_NULL
             {
                 if (uvComponentCount <= 2)

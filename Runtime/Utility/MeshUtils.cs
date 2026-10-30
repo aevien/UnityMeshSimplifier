@@ -680,7 +680,7 @@ namespace UnityMeshSimplifier
         {
 #if OPTIMISATION_NULL
 #else
-            if (uvs == null || uvs.Count == 0)
+            if (uvs.IsEmpty)
                 return 0;
 #endif // OPTIMISATION_NULL
 
